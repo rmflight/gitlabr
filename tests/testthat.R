@@ -1,5 +1,8 @@
 library(testthat)
 library(gitlabr)
+print(getwd())
+# browser()
+# do.call(Sys.setenv, yaml::yaml.load_file("environment.yml"))
 
 if (Sys.getenv("GITLABR_TEST_API_VERSION") == "") {
   

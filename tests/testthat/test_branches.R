@@ -1,3 +1,4 @@
+do.call(Sys.setenv, yaml::yaml.load_file("environment.yml"))
 test_url <- Sys.getenv("GITLABR_TEST_URL")
 test_private_token <- Sys.getenv("GITLABR_TEST_TOKEN")
 test_api_version <- Sys.getenv("GITLABR_TEST_API_VERSION", unset = "v4")
